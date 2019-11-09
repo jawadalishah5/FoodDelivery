@@ -1,0 +1,15 @@
+.checkout{
+
+    position: sticky;
+    top: 70px;
+    background-color: white;
+    box-shadow:  2px 2px 2px #3a3131;
+    padding: 2%;
+
+}
+.btn-lg{
+    width:100%;
+}
+.label{
+    border-radius: 50%;
+}

@@ -1,0 +1,13 @@
+.info{
+    
+    background-image: linear-gradient(to right,rgb(175, 38, 38), rgba(255,0,0,0), rgb(175, 38, 38)); 
+    margin-top: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+margin-top:11%
+}
+.space{
+    margin-top:25px;
+}

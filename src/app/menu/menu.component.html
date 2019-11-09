@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="text-center shadow-heading">Special Offers:</h1>
+    <ul class="deals-list">
+      
+      <li class="text-center" *ngFor="let item of deals">
+          <h3 class="shadow-heading">{{item.deal}}</h3>
+           <p>{{item.items}}</p>
+           <p>Rs. {{item.price}}</p></li>
+    </ul>
+
+    <h1 class="text-center shadow-heading">Starters:</h1>
+    <ul class="deals-list">
+      
+      <li class="text-center" *ngFor="let item of starters">
+          <h3 class="shadow-heading">{{item.deal}}</h3>
+           <p>{{item.items}}</p>
+           <p>Rs. {{item.price}}</p></li>
+    </ul>
+    <h1 class="text-center shadow-heading">Burgers:</h1>
+    <ul class="deals-list">
+      
+      <li class="text-center" *ngFor="let item of burgers">
+          <h3 class="shadow-heading">{{item.deal}}</h3>
+           <p>{{item.items}}</p>
+           <p>Rs. {{item.price}}</p></li>
+    </ul>
+    <h1 class="text-center shadow-heading">Pizzas:</h1>
+    <ul class="deals-list">
+      
+      <li class="text-center" *ngFor="let item of pizzas">
+          <h3 class="shadow-heading">{{item.deal}}</h3>
+           <p>{{item.items}}</p>
+           <p>Rs. {{item.price}}</p></li>
+    </ul>
+
+</div>

@@ -1,0 +1,45 @@
+.checkout{
+
+    position: sticky;
+    top: 70px;
+    background-color: white;
+    box-shadow:  2px 2px 2px #3a3131;
+    padding: 2%;
+
+}
+
+.custom{
+   font-size: 36px;
+ 
+}
+
+.btn-lg{
+    width:100%;
+}
+.label{
+    border-radius: 50%;
+}
+
+
+
+
+
+.deals-list{
+    list-style-type: none;
+    
+    
+}
+.deals-list li{
+    border: solid rgb(185, 181, 181) 1px;
+    border-radius: 10px;
+    margin: 1%;
+}
+.container{
+    margin: 1%;
+}
+.shadow-heading{
+    text-shadow: 2px 2px 2px gray;
+}
+.deals-list li:hover{
+    background-color: #d9534f;
+}

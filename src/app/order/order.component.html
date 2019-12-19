@@ -10,13 +10,13 @@
                 <form action="">
                     <div class="form-group">
                     <label for="instruction">Special Instruction (Optional)</label>
-                    <input type="text" class="form-control" id="instruction" name="instruction">
+                    <textarea rows="4" cols="50" type="text" class="form-control" id="instruction" name="instruction"></textarea>
                     </div>
                     <div class="form-group">
                     <label for="address">Your Address</label>
-                    <input type="text" class="form-control" id="address" name="address">
+                    <textarea rows="4" cols="50" type="text" class="form-control" id="address" name="address"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-danger">Place Order</button>
+                    <a href="/signin"><label class="btn btn-danger btn-lg" >Place Order</label></a>
                 </form>
 
         </div>
@@ -24,14 +24,14 @@
           <h2>Items</h2>
           <ul class="items-list">
       
-                <li class="text-center" *ngFor="let item of items">
-                    <h3 class="">Item: {{item.item}}</h3>
-                    <p><u>Description: </u> {{item.des}} </p>
-                     <p>Quantity: {{item.quantity}}</p>
+                <li class="text-center" *ngFor="let checkoutDeal of checkoutDeals">
+                    <h3 class="">Item: {{checkoutDeal.name}}</h3>
+                    <p><u>Description: </u> {{checkoutDeal.items}} </p>
+                     <p >price: {{checkoutDeal.price}}</p>
                 </li>
           </ul><hr>
           <h1>Total</h1>
-          <h4>Rs. {{total}}</h4>
+          <h4>Rs. {{total()}}</h4>
 
         </div>
     </div>

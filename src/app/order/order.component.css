@@ -1,5 +1,6 @@
 .container{
-    margin-top: 70px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .items-list{
     list-style-type: none;
@@ -13,4 +14,7 @@
 }
 .block{
     box-shadow: 2px 2px 10px  grey    ;
+}
+.btn{
+    width:100%;
 }

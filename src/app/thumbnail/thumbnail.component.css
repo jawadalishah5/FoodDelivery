@@ -3,7 +3,16 @@
     border: none;
     
 }
-img:hover{
-    transform: scale(1.1);
-    filter: blur(5px);
+.col-md-4:hover{
+    transform: translate(0,-20px);
+    transition: all .2s ease-in;
+    
+}
+
+a{
+    text-decoration: none;   
+}
+.btn{
+    width: 100%;  
+    border-radius:0px ;
 }

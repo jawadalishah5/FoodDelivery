@@ -7,9 +7,18 @@
     padding: 2%;
 
 }
+
+.custom{
+   font-size: 36px;
+ 
+}
+
 .btn-lg{
     width:100%;
 }
 .label{
     border-radius: 50%;
 }
+
+
+

@@ -1,0 +1,26 @@
+<div class="col-md-5 col-md-offset-1">
+  <h1 class="text-center">Register</h1>
+  <hr>
+  <form>
+      <div class="form-group">
+          <label for="name">Enter your Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="name" name="name">
+      </div>
+      <div class="form-group">
+          <label for="number">Phone number:</label>
+          <input type="number" class="form-control" id="number" placeholder="phone number without dash (-)" name="number">
+      </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input [(ngModel)]="email" name='email'class="form-control" id="email" placeholder="Enter email" >
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input [(ngModel)]="password" name='password' class="form-control" type="password" placeholder="Enter password" >
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> I accept the <span style="color: blueviolet;">Terms of Use</span > & <span style="color: blueviolet;">Privacy Policy</span>.</label>
+    </div>
+    <button class="btn btn-danger" (click)="signup()">Register</button>
+  </form>
+</div>

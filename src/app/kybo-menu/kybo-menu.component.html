@@ -1,0 +1,59 @@
+
+
+<div class="container-fluid checkout" >
+    <div class="row ">
+      
+
+        <div class="col-md-4 col-md-offset-1">
+          <a href='/order'>
+            <button class="btn btn-success btn-lg checkout-btn">Checkout</button>
+          </a>
+        </div>
+        <div class="col-md-3">
+            <div class="custom">
+              
+                <select name="" id="" >
+                    <option selected disabled>Check List</option>
+                    <option *ngFor='let item of checklist' value="">
+                      {{item}}
+                    </option>
+                   
+
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-lg btn-info">Rs: {{total}}</button>
+          
+        </div>
+        <span class="label label-danger">{{count}}</span>
+      
+    </div>
+    
+</div>
+
+
+
+<div class="container">
+        <h1 class="text-center shadow-heading">Special Offers:</h1>
+        <ul *ngFor='let kybodeal of kybodeals' class="deals-list">
+          
+          <li (click)="append(kybodeal)" class="text-center">
+              <h3 class="shadow-heading">{{kybodeal.name}}</h3>
+               <p>{{kybodeal.items}}</p>
+               <p>Rs. {{kybodeal.price}}</p>
+            </li>
+        </ul>
+        
+    
+        <h1 class="text-center shadow-heading">Starters:</h1>
+        <ul *ngFor='let kybostarter of kybostarters' class="deals-list">
+          
+          <li (click)="append(kybostarter)"  class="text-center" >
+              <h3 class="shadow-heading">{{kybostarter.name}}</h3>
+               <p>Rs. {{kybostarter.price}}</p></li>
+        </ul>
+        
+    
+    </div>
+    

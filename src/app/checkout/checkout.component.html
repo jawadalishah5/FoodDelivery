@@ -7,14 +7,14 @@
                 <button class="btn btn-success btn-lg checkout-btn" >Checkout</button>
             </div>
             <div class="col-md-3">
-                <div class="dropdown">
-                    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Check List
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                    </ul>
+                <div class="custom">
+                  
+                    <select name="" id="" >
+                        <option selected disabled>Check List</option>
+                        <option *ngFor='let item of checklist' value=""><span >{{item}}</span></option>
+                       
+
+                    </select>
                 </div>
             </div>
             <div class="col-md-2">

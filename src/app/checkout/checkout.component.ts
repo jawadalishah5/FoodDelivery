@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
+
+  checklist=['one','two','three'];
+
   total=899;
   count=6
   constructor() { }

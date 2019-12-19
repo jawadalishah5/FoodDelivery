@@ -1,4 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
+import { OrderService } from '../services/order.service';
+import { Order } from '../models/order';
 
 @Component({
   selector: 'app-order',
@@ -7,23 +10,50 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
-  total=899
-  items=[
+  
+  /*items=[
     {
-      item:'deal 1',
-      quantity: 2,
-      des: 'Crispy potato wedges covered with spicy herbs & seasonings',
+      item:'Deal 1',
+      quantity: 1,
+      des: '1 Personal Pan Pizza, 2 Pcs. Garlic Bread and 345ml Soft Drink',
     },
     {
-      item: 'deal 2',
-      quantity: 1,
-      des: 'Crispy potato wedges covered with spicy herbs & seasonings',
+      item: 'Deal 3',
+      quantity: 2,
+      des: '1 Large Pizza, 6 Pcs. Garlic Bread and 1.5 Ltr. Drink.',
+    },
+    {
+      items: 'channa chaat',
+      quantity:1,
+      des:'',
     }
-  ];
+  ];*/
 
-  constructor() { }
+  price=0;
+
+  total(){
+    
+    for(let entry of this.checkoutDeals){
+      this.price+=entry.price;
+    }
+    return this.price;
+    }
+
+
+ 
+  
+
+
+  checkoutDeals:Order[];
+
+  
+  constructor(public orderService: OrderService) { }
 
   ngOnInit() {
+
+    this.orderService.getcheckout().subscribe(checkoutDeals =>{
+      this.checkoutDeals=checkoutDeals;
+    });
   }
 
 }
